@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barn House</title>
+
+    <!-- Google Font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font-awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/50337a89f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- DaisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container mx-auto">
+      <!-- Navbar Section starts -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-circle lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <i
+            class="fa-solid fa-arrow-right bg-lime-400 rounded-full -rotate-45 text-xl"
+          ></i>
+          <a class="text-xl font-bold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden sm:flex gap-10">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-magnifying-glass shadow rounded"></i>
+            <i class="fa-solid fa-cart-shopping bg-white shadow rounded"></i>
+          </div>
+
+          <div class="btn bg-lime-400 rounded-full font-bold">
+            <a>Book Consult</a>
+            <i
+              class="fa-solid fa-arrow-right text-white bg-black rounded-lg -rotate-45 text-xl"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar Section ends -->
+
+      <!-- Banner Section starts -->
+      <section class="text-center mt-5 mb-16">
+        <!-- Image Section -->
+        <img class="" src="./assets/banner.png" alt="" />
+        <h1 class="text-5xl font-bold text-center mt-2 mb-8">
+          A barn house of this design has a <br />
+          striking appearance
+        </h1>
+        <p class="mb-8">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal <br />
+          accents, and large windows that flood the space with natural light.
+        </p>
+        <button class="btn bg-lime-300 rounded-full">
+          View Details
+          <i class="fa-solid fa-arrow-right -rotate-45 shadow-lime-500"></i>
+        </button>
+      </section>
+      <!-- Banner Section ends -->
+    </header>
+
+    <!-- Main Section -->
+    <main></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
+</html>
