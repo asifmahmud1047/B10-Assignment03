@@ -112,8 +112,9 @@
     </header>
 
     <!-- Main Section -->
-    <main class="container bg-gray-100 max-w-screen-2xl">
-      <section class="my-32">
+    <main class="container bg-gray-100 max-w-screen-2xl pt-8px pb-1">
+      <!-- We design section starts -->
+      <section class="bg-gray-100 my-32 pt-3">
         <img
           class="border-dashed border-2 border-gray-600 p-4 mt-4 hidden lg:flex"
           src="./assets/Vector.png"
@@ -153,7 +154,7 @@
               </div>
             </div>
             <div class="flex bg-white rounded-lg gap-10 p-8">
-              <img src="./assets/commercial.png" alt="" />
+              <img src="./assets/residential.png" alt="" />
               <div class="text-start">
                 <h3 class="font-semibold">Residential</h3>
                 <p>
@@ -171,8 +172,8 @@
       </section>
       <!-- We design section ends -->
 
-      <!-- How we works section -->
-      <section class="my-32 mx-16">
+      <!-- How we works section starts -->
+      <section class="bg-gray-100 mb-16 mx-16">
         <div class="flex gap-2 bg-white rounded-full p-1 w-40 justify-center">
           <i class="fa-solid fa-arrow-right pt-1"></i>
           <p class="font-semibold">How we work</p>
@@ -223,6 +224,105 @@
             </p>
           </div>
         </div>
+      </section>
+      <!-- How we works section ends -->
+
+      <!-- Latest Portfolio starts -->
+      <section class="bg-white py-24">
+        <div
+          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-64 justify-center"
+        >
+          <i class="fa-solid fa-arrow-right pt-1"></i>
+          <p class="font-semibold">Explore our Latest works</p>
+        </div>
+        <h1 class="text-center font-bold text-5xl mb-8">
+          Our Latest Portfolio
+        </h1>
+        <p class="text-center mb-7">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+
+        <!-- layout -->
+        <div class="grid grid-cols-4 grid-rows-2 p-3 gap-4">
+          <div class="flex gap-5 col-span-3 shadow rounded p-3">
+            <img src="./assets/img1.png" alt="" />
+            <div class="grid">
+              <h3 class="font-semibold text-xl">Commercial</h3>
+              <p class="my-2">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <div class="text-start">
+                <h3 class="font-bold text-4">
+                  View Details
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 bg-lime-500"
+                  ></i>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <img
+            class="lg:grid-rows-1 md:collapse shadow rounded p-3"
+            src="./assets/img2.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- Latest Portfolio ends -->
+
+      <!-- Discuss next Project -->
+      <section>
+        <div
+          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-40 justify-center"
+        >
+          <i class="fa-solid fa-arrow-right pt-1"></i>
+          <p class="font-semibold">Let’s Connect</p>
+        </div>
+        <h1 class="text-center font-bold text-5xl mb-8">
+          Let’s Discuss Next Project
+        </h1>
+        <p class="text-center mb-7">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+
+        <!-- Input part -->
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-2 justify-center items-center mx-auto rounded-full"
+        >
+          <input
+            type="text"
+            placeholder="First Name*"
+            class="input input-bordered input-primary w-full max-w-md"
+          />
+          <input
+            type="text"
+            placeholder="Last Name*"
+            class="input input-bordered input-primary w-full max-w-md"
+          />
+          <input
+            type="number"
+            placeholder="Phone Number*"
+            class="input input-bordered input-primary w-full max-w-md"
+          />
+          <input
+            type="email"
+            placeholder="Email Number*"
+            class="input input-bordered input-primary w-full max-w-md"
+          />
+        </div>
+        <input
+          type="text"
+          placeholder="Write your message here"
+          class="input input-bordered input-primary w-full max-w-screen-lg mx-auto h-48"
+        />
+        <button class="btn bg-lime-500 rounded-full text-xl">
+          View Details
+          <i class="fa-solid fa-arrow-right -rotate-45 shadow-lime-500"></i>
+        </button>
       </section>
     </main>
 
