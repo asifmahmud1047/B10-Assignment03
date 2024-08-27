@@ -40,6 +40,15 @@
         },
       };
     </script>
+
+    <!-- raw css -->
+    <style>
+      .next-project-section {
+        background-image: url(assets/bg.jpg);
+        max-width: auto;
+        padding: 16px;
+      }
+    </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -47,7 +56,7 @@
       <!-- Navbar Section starts -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
-          <div class="dropdown">
+          <!-- <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-circle lg:hidden">
               <i class="fa-solid fa-bars"></i>
             </div>
@@ -61,12 +70,13 @@
               <li><a>Blogs</a></li>
               <li><a>Contact Us</a></li>
             </ul>
-          </div>
+          </div> -->
           <i
             class="fa-solid fa-arrow-right bg-lime-400 rounded-full -rotate-45 text-xl px-1"
           ></i>
           <a class="text-3xl font-bold pl-3">Rinterio</a>
         </div>
+
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg">
             <li><a class="font-semibold">Home</a></li>
@@ -87,6 +97,25 @@
             <i
               class="fa-solid fa-arrow-right text-white bg-black rounded-full -rotate-45 text-xl px-1"
             ></i>
+          </div>
+
+          <!-- menubar -->
+          <div class="navbar-end mx-auto">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-circle lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -113,7 +142,7 @@
     </header>
 
     <!-- Main Section -->
-    <main class="container bg-gray-100 max-w-screen-2xl pt-8px pb-1">
+    <main class="container bg-gray-100 max-w-screen-2xl pt-8px pb-1 mx-auto">
       <!-- We design section starts -->
       <section class="bg-gray-100 my-32 pt-3">
         <img
@@ -125,20 +154,20 @@
         <!-- We design section starts -->
         <div class="grid lg:grid-cols-2 mx-16 gap-5">
           <!-- Text section starts -->
-          <div class="text-center">
+          <div>
             <!-- About us section -->
             <div
-              class="flex gap-1 bg-white rounded-full p-2 w-32 justify-center text-center"
+              class="flex gap-1 bg-white rounded-full p-2 w-32 justify-center lg:mx-0 sm:mx-auto"
             >
               <i class="fa-solid fa-arrow-right pt-1"></i>
               <p class="font-semibold">About Us</p>
             </div>
             <!-- Text title -->
-            <h1 class="text-5xl font-bold mt-5 mb-10">
+            <h1 class="text-5xl font-bold mt-2 mb-10">
               We design thoughtful, liveable spaces
             </h1>
             <!-- Text subtitle -->
-            <p class="my-5">
+            <p class="my-2 mb-4">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -175,7 +204,9 @@
 
       <!-- How we works section starts -->
       <section class="bg-gray-100 mb-16 mx-16">
-        <div class="flex gap-2 bg-white rounded-full p-1 w-40 justify-center">
+        <div
+          class="flex gap-2 bg-white rounded-full p-1 w-40 justify-center mx-auto mb-4"
+        >
           <i class="fa-solid fa-arrow-right pt-1"></i>
           <p class="font-semibold">How we work</p>
         </div>
@@ -230,8 +261,9 @@
 
       <!-- Latest Portfolio starts -->
       <section class="bg-white py-24">
+        <!-- Upper part -->
         <div
-          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-64 justify-center"
+          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-64 justify-center mx-auto mb-4"
         >
           <i class="fa-solid fa-arrow-right pt-1"></i>
           <p class="font-semibold">Explore our Latest works</p>
@@ -245,8 +277,8 @@
         </p>
 
         <!-- layout -->
-        <div class="grid grid-cols-4 grid-rows-2 p-3 gap-4">
-          <div class="flex gap-5 col-span-3 shadow rounded p-3">
+        <div class="grid grid-cols-3 p-3 gap-4">
+          <div class="md:flex gap-5 col-span-2 shadow rounded p-3">
             <img src="./assets/img1.png" alt="" />
             <div class="grid">
               <h3 class="font-semibold text-xl">Commercial</h3>
@@ -265,19 +297,161 @@
               </div>
             </div>
           </div>
-          <img
-            class="lg:grid-rows-1 md:collapse shadow rounded p-3"
-            src="./assets/img2.png"
-            alt=""
-          />
+          <div class="col-span-1">
+            <img class="shadow rounded p-3" src="./assets/img2.png" alt="" />
+          </div>
+        </div>
+
+        <!-- 2nd row -->
+        <div class="grid sm:grid-cols-4 p-3 gap-4">
+          <div class="col-span-1">
+            <img class="shadow rounded p-3" src="./assets/img3.png" alt="" />
+          </div>
+          <div class="flex gap-5 col-span-2 shadow rounded p-3">
+            <img src="./assets/img4.png" alt="" />
+            <div class="grid">
+              <h3 class="font-semibold text-xl">Commercial</h3>
+              <p class="my-2">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <div class="text-start">
+                <h3 class="font-bold text-4">
+                  View Details
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 bg-lime-500"
+                  ></i>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-1">
+            <img class="shadow rounded p-3" src="./assets/img5.png" alt="" />
+          </div>
         </div>
       </section>
       <!-- Latest Portfolio ends -->
 
+      <!-- New FAQ Section -->
+      <section class="mx-auto py-24">
+        <div
+          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-64 justify-center mx-auto mb-4"
+        >
+          <i class="fa-solid fa-arrow-right pt-1"></i>
+          <p class="font-semibold">Let's find out your Answers</p>
+        </div>
+
+        <div class="lg:px-48">
+          <h1 class="text-center font-bold text-5xl mb-8">
+            Frequently Asked Questions
+          </h1>
+          <p class="text-center mb-7">
+            Here are some of the most frequently asked questions to know our
+            services and process better. If you don't find the answers you are
+            looking for, feel free to contact us directly.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="collapse collapse-arrow bg-base-200 lg:px-16">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What services does Rinterio offer?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Rinterio offers a full range of interior design services,
+              including residential and commercial design, space planning,
+              furniture selection, color consultation, and project management.
+              We tailor our services to meet the unique needs and preferences of
+              each client.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 lg:px-16">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How does the design process work at Rinterio?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Our design process begins with an initial consultation where we
+              discuss your vision, needs, and budget. After this, we create a
+              design concept, which includes mood boards, layouts, and material
+              selections. Once you approve the concept, we move on to detailed
+              planning and execution, ensuring every detail is aligned with your
+              expectations.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 lg:px-16">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How long does an interior design project typically take?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The timeline for an interior design project can vary depending on
+              the scope and complexity. On average, residential projects take
+              between 8 to 12 weeks, while larger commercial projects may take
+              longer. We provide a detailed timeline during the planning phase
+              to keep you informed.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 lg:px-16">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the cost of working with Rinterio?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The cost of our services varies based on the size of the project,
+              the scope of work, and the materials selected. We offer a detailed
+              estimate after the initial consultation, ensuring transparency in
+              pricing. We also offer flexible payment plans to accommodate
+              different budgets.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 lg:px-16">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What if I’m not satisfied with the final design?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Our goal is to ensure your complete satisfaction. We involve you
+              throughout the design process to minimize any surprises. If you’re
+              not happy with any aspect of the final design, we’ll work with you
+              to make adjustments until you’re fully satisfied.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question -->
+        <div class="lg:px-16">
+          <div class="card bg-base-100 w-9/12 shadow-xl justify-center">
+            <div class="card-body">
+              <h2 class="card-title">Ask Question!</h2>
+              <input
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered input-primary w-full max-w-9/12"
+              />
+              <div class="card-actions justify-end">
+                <button class="btn bg-lime-400">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Discuss next Project -->
       <section class="next-project-section">
         <div
-          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-40 justify-center"
+          class="flex gap-2 bg-lime-200 rounded-full p-1 max-w-40 justify-center mx-auto my-4"
         >
           <i class="fa-solid fa-arrow-right pt-1"></i>
           <p class="font-semibold">Let’s Connect</p>
@@ -292,34 +466,34 @@
 
         <!-- Input part -->
         <div
-          class="grid sm:grid-cols-1 md:grid-cols-2 justify-center items-center mx-auto rounded-full gap-5"
+          class="grid sm:grid-cols-1 md:grid-cols-2 mx-auto rounded-full gap-5"
         >
           <input
             type="text"
             placeholder="First Name*"
-            class="input input-bordered input-primary w-full max-w-md"
+            class="input input-bordered input-primary w-full max-w-md mx-auto"
           />
           <input
             type="text"
             placeholder="Last Name*"
-            class="input input-bordered input-primary w-full max-w-md"
+            class="input input-bordered input-primary w-full max-w-md mx-auto"
           />
           <input
             type="number"
             placeholder="Phone Number*"
-            class="input input-bordered input-primary w-full max-w-md"
+            class="input input-bordered input-primary w-full max-w-md mx-auto"
           />
           <input
             type="email"
             placeholder="Email Number*"
-            class="input input-bordered input-primary w-full max-w-md"
+            class="input input-bordered input-primary w-full max-w-md mx-auto"
           />
         </div>
         <div class="grid grid-cols-1 mx-auto gap-5 pt-5">
           <input
             type="text"
             placeholder="Write your message here"
-            class="input input-bordered input-primary w-full max-w-screen-lg mx-auto h-56"
+            class="input input-bordered input-primary w-full max-w-md md:max-w-screen-lg mx-auto h-56"
           />
           <button
             class="btn bg-lime-500 rounded-full text-xl mx-auto w-9/12 mb-16"
@@ -348,7 +522,7 @@
         sophistication, featuring weathered wood, sleek metal accents.
       </p>
       <nav
-        class="grid sm:grid-flow-col gap-5 md:gap-32 text-white grid-flow-row"
+        class="grid sm:grid-flow-col gap-5 md:gap-24 text-white grid-flow-row"
       >
         <a class="link link-hover">Home</a>
         <a class="link link-hover">Services</a>
