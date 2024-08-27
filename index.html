@@ -50,13 +50,21 @@
       }
     </style>
   </head>
+
   <body>
     <!-- Header Section -->
     <header class="container mx-auto">
       <!-- Navbar Section starts -->
       <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <!-- <div class="dropdown">
+        <div>
+          <i
+            class="fa-solid fa-arrow-right bg-lime-400 rounded-full -rotate-45 text-xl px-1"
+          ></i>
+          <a class="text-3xl font-bold pl-3">Rinterio</a>
+        </div>
+
+        <div class="navbar-end flex justify-end">
+          <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-circle lg:hidden">
               <i class="fa-solid fa-bars"></i>
             </div>
@@ -70,14 +78,10 @@
               <li><a>Blogs</a></li>
               <li><a>Contact Us</a></li>
             </ul>
-          </div> -->
-          <i
-            class="fa-solid fa-arrow-right bg-lime-400 rounded-full -rotate-45 text-xl px-1"
-          ></i>
-          <a class="text-3xl font-bold pl-3">Rinterio</a>
+          </div>
         </div>
 
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden lg:flex lg:justify-end">
           <ul class="menu menu-horizontal px-1 text-lg">
             <li><a class="font-semibold">Home</a></li>
             <li><a>Services</a></li>
@@ -86,6 +90,7 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
+
         <div class="navbar-end hidden sm:flex gap-10">
           <div class="flex gap-5">
             <i class="fa-solid fa-magnifying-glass shadow rounded"></i>
@@ -97,25 +102,6 @@
             <i
               class="fa-solid fa-arrow-right text-white bg-black rounded-full -rotate-45 text-xl px-1"
             ></i>
-          </div>
-
-          <!-- menubar -->
-          <div class="navbar-end mx-auto">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-circle lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -152,7 +138,7 @@
         />
 
         <!-- We design section starts -->
-        <div class="grid lg:grid-cols-2 mx-16 gap-5">
+        <div class="grid lg:grid-cols-2 sm:mx-16 gap-5 mx-2">
           <!-- Text section starts -->
           <div>
             <!-- About us section -->
@@ -173,8 +159,12 @@
               accents.
             </p>
             <!-- Commercial -->
-            <div class="flex bg-white rounded-lg gap-10 p-8 mb-5">
-              <img src="./assets/commercial.png" alt="" />
+            <div class="flex bg-white rounded-lg gap-10 sm:p-8 mb-5 p-2">
+              <img
+                class="max-w-16 max-h-16"
+                src="./assets/commercial.png"
+                alt=""
+              />
               <div class="text-start">
                 <h3 class="font-semibold">Commercial</h3>
                 <p>
@@ -183,8 +173,12 @@
                 </p>
               </div>
             </div>
-            <div class="flex bg-white rounded-lg gap-10 p-8">
-              <img src="./assets/residential.png" alt="" />
+            <div class="flex bg-white rounded-lg gap-10 sm:p-8 p-2">
+              <img
+                class="max-w-16 max-h-16"
+                src="./assets/residential.png"
+                alt=""
+              />
               <div class="text-start">
                 <h3 class="font-semibold">Residential</h3>
                 <p>
@@ -196,7 +190,7 @@
           </div>
           <!-- Image section starts -->
           <div>
-            <img src="./assets/Rectangle.png" alt="" />
+            <img class="min-w-full" src="./assets/Rectangle.png" alt="" />
           </div>
         </div>
       </section>
@@ -277,10 +271,13 @@
         </p>
 
         <!-- layout -->
-        <div class="grid grid-cols-3 p-3 gap-4">
-          <div class="md:flex gap-5 col-span-2 shadow rounded p-3">
-            <img src="./assets/img1.png" alt="" />
-            <div class="grid">
+        <div class="grid sm:grid-cols-3 p-3 gap-4 grid-cols-1">
+          <div
+            class="flex flex-grow overflow-hidden gap-5 sm:col-span-2 shadow rounded p-3 sm:flex-row col-span-1 flex-col"
+          >
+            <img class="min-w-fit" src="./assets/img1.png" alt="" />
+
+            <div class="">
               <h3 class="font-semibold text-xl">Commercial</h3>
               <p class="my-2">
                 The barn house captivates with its blend of rustic charm and
@@ -298,18 +295,30 @@
             </div>
           </div>
           <div class="col-span-1">
-            <img class="shadow rounded p-3" src="./assets/img2.png" alt="" />
+            <img
+              class="shadow rounded p-3 min-w-full"
+              src="./assets/img2.png"
+              alt=""
+            />
           </div>
         </div>
 
         <!-- 2nd row -->
-        <div class="grid sm:grid-cols-4 p-3 gap-4">
+        <div class="grid sm:grid-cols-4 p-3 gap-4 grid-cols-1">
           <div class="col-span-1">
-            <img class="shadow rounded p-3" src="./assets/img3.png" alt="" />
+            <img
+              class="shadow rounded p-3 min-w-full"
+              src="./assets/img3.png"
+              alt=""
+            />
           </div>
-          <div class="flex gap-5 col-span-2 shadow rounded p-3">
-            <img src="./assets/img4.png" alt="" />
-            <div class="grid">
+
+          <div
+            class="flex flex-grow overflow-hidden gap-5 sm:col-span-2 shadow rounded p-3 sm:flex-row col-span-1 flex-col"
+          >
+            <img class="min-w-fit" src="./assets/img4.png" alt="" />
+
+            <div class="">
               <h3 class="font-semibold text-xl">Commercial</h3>
               <p class="my-2">
                 The barn house captivates with its blend of rustic charm and
@@ -326,8 +335,13 @@
               </div>
             </div>
           </div>
+
           <div class="col-span-1">
-            <img class="shadow rounded p-3" src="./assets/img5.png" alt="" />
+            <img
+              class="shadow rounded p-3 min-w-full"
+              src="./assets/img5.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
